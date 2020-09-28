@@ -1,5 +1,8 @@
 # FirstCppGame
  
+https://www.youtube.com/watch?v=LsNW4FPHuZE
+
+
 gitignored :
 
 .vs/*
