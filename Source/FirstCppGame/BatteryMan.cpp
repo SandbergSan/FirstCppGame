@@ -20,7 +20,7 @@ ABatteryMan::ABatteryMan()
 
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 400.f;
+	CameraBoom->TargetArmLength = 410.f;
 	CameraBoom->bUsePawnControlRotation = true;
 
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
@@ -35,7 +35,7 @@ ABatteryMan::ABatteryMan()
 void ABatteryMan::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
