@@ -17,7 +17,7 @@ void AMyMatchActor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	   UHSMath::intPlus(  1,   3);
+	   UHSMath::intPlus(  ValueA,   ValueB);
 	  
 	 
 }

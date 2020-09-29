@@ -15,6 +15,11 @@ public:
 	// Sets default values for this actor's properties
 	AMyMatchActor();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HSSetting")
+		int ValueA = 1 ;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HSSetting")
+		int ValueB = 1;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
