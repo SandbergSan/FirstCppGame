@@ -3,7 +3,7 @@
 
 #include "HSMath.h"
  
- 
+
 int UHSMath::intPlus(int inputIntA, int inputIntB)
 {
 	int result ;
@@ -35,6 +35,7 @@ int UHSMath::intPlus(int inputIntA, int inputIntB)
 	//UE_LOG(LogTemp, Warning, TEXT("%s"),  *str)
 	//	UE_LOG(LogTemp, Warning, TEXT("%s"), *strB)
 	UE_LOG(LogTemp, Warning, TEXT("%s"), *strC)
+		UE_LOG(LogTemp, Warning, TEXT("haha") )
 		//(FString::FromInt(result))
 	return result;
 }

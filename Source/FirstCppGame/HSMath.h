@@ -14,5 +14,7 @@ class FIRSTCPPGAME_API UHSMath : public UObject
 {
 	GENERATED_BODY()
 public:
+
+	UFUNCTION(BlueprintCallable, Category = "HS")
 	static int intPlus(int inputIntA, int inputIntB);
 };
