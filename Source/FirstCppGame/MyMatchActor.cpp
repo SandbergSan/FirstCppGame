@@ -18,8 +18,21 @@ void AMyMatchActor::BeginPlay()
 	Super::BeginPlay();
 
 	   UHSMath::intPlus(  ValueA,   ValueB);
-	  
+	   UHSMath::intPlus(1.2f, 1.3f);
 	 
+	   int a = 0;
+	   float bf = 0;
+
+	   a = UHSMath::NewPlusFloat(1, 2);
+	   bf = UHSMath::NewPlusFloat(1.2f, 1.3f);
+
+	   FString strK = "a: ";
+	   strK.Append(FString::FromInt(a));
+	   FString strKB = "b: ";
+	   strKB.Append(FString::SanitizeFloat(bf));
+
+	   UE_LOG(LogTemp, Display, TEXT(" %s"), *strK)
+	 UE_LOG(LogTemp, Display, TEXT(" %s"), *strKB)
 }
 
 // Called every frame
