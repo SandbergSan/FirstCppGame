@@ -1,0 +1,22 @@
+Quick notes:
+
+If you instantiate an object and want to access a method or property of it, you use the '.'.
+
+CMyObject myObj();
+myObj.MethodCall();
+
+If you have a pointer to an object and want to access a method or property of it, you use the '->'.
+
+CMyObject *myObj = new CMyObject();
+myObj->MethodCall();
+
+If you are accessing a static method or property in some namespace, you use the '::'.
+
+class CMyObject
+{
+static int MethodTwo() { cout << "Hello\n"; }
+}
+
+CMyObject::MethodTwo();
+
+The '::' is a namespace resolution.
