@@ -13,6 +13,20 @@ class AFirstCppGameGameMode : public AGameModeBase
 
 public:
 	AFirstCppGameGameMode();
+
+	//This would become gettable/settable in blueprint after "get game mode" "cast to firstcppgamegamemode" 
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "WorldBuilder")
+	//int testInt = 1;
+
+
+	//writing class before aworldbuilder here makes it so you dont have to include the worldbuilder.h file at the top.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "WorldBuilder")
+	class AWorldBuilder* SpawnedWorldBuilder;
+
+	UFUNCTION(BlueprintCallable, Category = "WorldBuilder")
+	void SpawnWorldBuilder();
+
+
 };
 
 

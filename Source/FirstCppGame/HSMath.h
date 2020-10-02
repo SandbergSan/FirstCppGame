@@ -5,10 +5,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "HSMath.generated.h"
- 
-
-
-
+  
 /**
  * 
  */
