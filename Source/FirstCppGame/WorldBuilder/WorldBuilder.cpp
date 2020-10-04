@@ -27,6 +27,26 @@ void AWorldBuilder::Tick(float DeltaTime)
 
 void AWorldBuilder::Startoff(int Intin)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Worldbuilder Started! <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<") )
+	UE_LOG(LogTemp, Warning, TEXT("Worldbuilder Started! <<<<<<<<<<<<<<<<<<<<<<<<<<<<  1") )
+
+	for (int SectionX = (1 - WorldMaxSectionsHorizontal); SectionX < WorldMaxSectionsHorizontal; SectionX++)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Worldbuilder Started! <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<2"))
+
+		for (int SectionY = (1 - WorldMaxSectionsHorizontal); SectionY < WorldMaxSectionsHorizontal; SectionY++)
+		{
+			for (int SectionZ = (1 - WorldMaxSectionsVertical); SectionZ < WorldMaxSectionsVertical; SectionZ++)
+			{
+
+				FString strC = "World Section X: ";
+				strC.Append(FString::FromInt(SectionX));
+				strC.Append(" Y: ");
+				strC.Append(FString::FromInt(SectionY));
+				strC.Append(" Z: ");
+				strC.Append(FString::FromInt(SectionZ));
+				UE_LOG(LogTemp, Warning, TEXT("%s"), *strC)
+			}
+		}
+	}
 }
 

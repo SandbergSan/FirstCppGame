@@ -38,9 +38,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "WorldBuilder")
 		class AWorldBuilder* SpawnedWorldBuilder;
 		//AWorldBuilder* SpawnedWorldBuilder;
-		 
+
+	//writing class before aworldbuilder here makes it so you dont have to include the worldbuilder.h file at the top.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GameProcessor")
+		class AGameProcessor* SpawnedGameProcessor;
 
 	UFUNCTION(BlueprintCallable, Category = "WorldBuilder")
 		void SpawnWorldBuilder();
+
+	UFUNCTION(BlueprintCallable, Category = "GameProcessor")
+		void SpawnGameProcessor();
 
 };
