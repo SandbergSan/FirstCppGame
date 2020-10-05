@@ -2,7 +2,8 @@
 
 
 #include "WorldBuilder.h"
-
+#include "FirstCppPlayerState.h"
+#include "GameProcessor.h"
 // Sets default values
 AWorldBuilder::AWorldBuilder()
 {
@@ -50,3 +51,7 @@ void AWorldBuilder::Startoff(int Intin)
 	}
 }
 
+
+void AWorldBuilder::Initiate()
+{
+}

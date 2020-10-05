@@ -61,7 +61,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
-	bool DebugMode = true;
+	bool DebugMode = false;
 
 	bool ProcessorActive = false;
 	int ProcessorCurrentSpentTime = 0;

@@ -33,7 +33,7 @@ public:
 	FString WorldName = "MyWorld";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "WorldBuilder")
-		FString WorldNameB = "MyWorldB";
+	FString WorldNameB = "MyWorldB";
 
 	//Locked Variables:
 
@@ -58,8 +58,12 @@ public:
 
 	//World Functions:
 	#pragma region World Functions
+
 	UFUNCTION(BlueprintCallable, Category = "WorldBuilder")
 	void Startoff(int Intin);
+	 
+	UFUNCTION(BlueprintCallable, Category = "WorldBuilder")
+	void Initiate();
 
 	#pragma endregion World Functions
 
